@@ -21,7 +21,7 @@ async function createWindow() {
     await integrate(window);
     window.setMenuBarVisibility(false);
     await window.loadURL('file://' + getOfRenderer('index.html')); //Can't use the `sandbox://` protocol - index.html would (incorrectly) redirect to https
-    window.setTitle('Electron WMD');
+    window.setTitle('DeskMD Pro - now running as U2B');
 
     const store = new Store();
 
