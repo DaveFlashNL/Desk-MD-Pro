@@ -1,5 +1,5 @@
 {
-  "name": "deskmdpro",
+  "name": "DeskMDPro",
   "version": "1.3.5",
   "description": "Electron-wrapped version of asivery's Web MiniDisc Pro. (Built by ddM/DDW)",
   "main": "dist/main.js",
@@ -40,7 +40,7 @@
       "res"
     ]
   },
-  "author": "daveflash",
+  "author": "asivery & DaveFlash built with love by ddMedia | DaveFlash on Apple Silicon™ as native Universal. All rights reserved.",
   "private": true,
   "dependencies": {
     "async-mutex": "^0.3.2",

@@ -21,7 +21,7 @@ async function createWindow() {
     await integrate(window);
     window.setMenuBarVisibility(false);
     await window.loadURL('file://' + getOfRenderer('index.html')); //Can't use the `sandbox://` protocol - index.html would (incorrectly) redirect to https
-    window.setTitle('DeskMD Pro - now running as U2B');
+    window.setTitle('Desk MD Pro - now fully Universal on macOS!');
 
     const store = new Store();
 
