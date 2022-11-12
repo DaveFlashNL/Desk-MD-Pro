@@ -66,38 +66,46 @@ async function createWindow() {
                             role: "quit",
                             click: () => window.close(),
                         },
-                ]}, {
+                    ]
+                }, {
                     label: 'Edit',
                     submenu: [
-                        {   label: "Undo", 
-                            accelerator: "CmdOrCtrl+Z", 
-                            role: "undo", 
-                        },
-                        {   label: "Redo",
-                            accelerator: "Shift+CmdOrCtrl+Z",
-                            role: "redo", 
+                        {
+                            label: "Undo",
+                            accelerator: "CmdOrCtrl+Z",
+                            role: "undo",
                         },
                         {
-                            type: "separator", 
+                            label: "Redo",
+                            accelerator: "Shift+CmdOrCtrl+Z",
+                            role: "redo",
                         },
-                        {   label: "Cut",
+                        {
+                            type: "separator",
+                        },
+                        {
+                            label: "Cut",
                             accelerator: "CmdOrCtrl+X",
                             role: "cut",
                         },
-                        {   label: "Copy",
+                        {
+                            label: "Copy",
                             accelerator: "CmdOrCtrl+C",
                             role: "copy",
                         },
-                        {   label: "Paste",
+                        {
+                            label: "Paste",
                             accelerator: "CmdOrCtrl+V",
                             role: "paste",
                         },
-                        {   label: "Select All",
+                        {
+                            label: "Select All",
                             accelerator: "CmdOrCtrl+A",
                             role: "selectAll",
                         },
-                    ]},
-            ])
+                    ]
+                },
+                ])
         );
 
     setupMenu();

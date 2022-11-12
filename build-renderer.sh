@@ -4,10 +4,10 @@ if [ -d "renderer" ]; then
     exit
 fi
 
-rm -rf webminidisc
+rm -rf WebMDPro
 
 git clone https://github.com/DaveFlashNL/WebMDPro
-cd webminidisc
+cd WebMDPro
 npm i
 PUBLIC_URL="sandbox://" REACT_APP_NO_GA_RELEASE="true" npm run build; rm -rf ../renderer; cp -rv build ../renderer
 cd ..

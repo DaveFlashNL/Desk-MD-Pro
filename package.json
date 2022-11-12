@@ -1,6 +1,6 @@
 {
-  "name": "DeskMDPro",
-  "version": "1.3.4",
+  "name": "deskmdpro",
+  "version": "1.3.5",
   "description": "Electron-wrapped version of asivery's Web MiniDisc Pro. (Built by ddM/DDW)",
   "main": "dist/main.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "npm run build && NODE_ENV=development electron ./dist/main.js",
     "pack": "npm run build && electron-builder --dir",
     "dist": "npm run build && electron-builder -wl --x64 && electron-builder -w --ia32",
-    "dist-mac": "npm run build && electron-builder -m --x64 && electron-builder -m --arm64"
+    "dist-mac": "npm run build && electron-builder -m --universal"
   },
   "build": {
     "directories": {
@@ -17,12 +17,21 @@
     },
     "artifactName": "${name}-${version}-${os}_${arch}.${ext}",
     "compression": "store",
-    "asar": false,
+    "asar": true,
+    "asarUnpack": [
+      "./node_modules/netmd-js/**/*",
+      "./node_modules/crypto-js/**/*",
+      "./node_modules/jconv/**/*",
+      "./node_modules/jsbi/**/*"
+    ],
     "win": {
       "icon": "./res/icon.ico"
     },
     "linux": {
       "icon": "./res/icon.png"
+    },
+    "mac": {
+      "mergeASARs": false
     },
     "files": [
       "node_modules",
@@ -48,9 +57,9 @@
   "devDependencies": {
     "@types/electron": "^1.6.10",
     "@types/node-fetch": "^2.6.2",
-    "electron": "^13.6.9",
-    "electron-builder": "^23.0.3",
-    "@electron/universal": "1.0.4",
+    "electron": "^18.0.1",
+    "electron-builder": "^23.6.0",
+    "@electron/universal": "1.2.1",
     "prettier": "^2.7.1"
   }
 }
