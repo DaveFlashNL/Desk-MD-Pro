@@ -40,7 +40,7 @@
       "res"
     ]
   },
-  "author": "asivery & DaveFlash built with love by ddMedia | DaveFlash on Apple Silicon™ as native Universal. All rights reserved.",
+  "author": "asivery & DaveFlash, built with love by ddMedia | DaveFlash on Apple Silicon™ as native Universal. All rights reserved.",
   "private": true,
   "dependencies": {
     "async-mutex": "^0.3.2",
