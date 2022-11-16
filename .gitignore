@@ -3,6 +3,7 @@ node_modules
 build
 renderer
 webminidisc
+WebMDPro
 DeskMDPro.code-workspace
 
 # misc
@@ -11,3 +12,7 @@ DeskMDPro.code-workspace
 .env.development.local
 .env.test.local
 .env.production.local
+renderer_bad
+renderer_save
+build_bad
+build_save
