@@ -1,6 +1,15 @@
 {
-  "name": "DeskMDPro",
+  "name": "deskmdpro",
+  "displayName": "Desk MD Pro",
+  "productName": "Desk MD Pro",
   "version": "1.3.5",
+  "version-string": {
+    "CompanyName": "ddMedia | DaveFlash",
+    "FileDescription": "Desk MD Pro",
+    "OriginalFilename": "DeskMDPro",
+    "ProductName": "Desk MD Pro",
+    "InternalName": "DeskMDPro"
+  },
   "description": "Electron-wrapped version of asivery's Web MiniDisc Pro. (Built by ddM/DDW)",
   "main": "dist/main.js",
   "scripts": {

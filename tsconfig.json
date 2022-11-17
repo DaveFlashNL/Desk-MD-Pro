@@ -1,17 +1,17 @@
 {
-    "compilerOptions": {
-      "target": "es2017",
-      "noImplicitAny": true,
-      "sourceMap": true,
-      "moduleResolution": "node",
-      "module": "CommonJS",
-      "esModuleInterop": true,
-      "outDir": "dist",
-      "experimentalDecorators": true,
-      "jsx": "react",
-      "downlevelIteration": true,
-    },
-    "include": [
-      "src"
-    ],
+  "compilerOptions": {
+    "target": "es2017",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "downlevelIteration": true,
+  },
+  "include": [
+    "src"
+  ],
 }
