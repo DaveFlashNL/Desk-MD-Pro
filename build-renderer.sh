@@ -12,3 +12,4 @@ npm i
 PUBLIC_URL="sandbox://" REACT_APP_NO_GA_RELEASE="true" npm run build; rm -rf ../renderer; cp -rv build ../renderer
 cd ..
 
+rm -rf WebMDPro
