@@ -29,7 +29,10 @@
     "artifactName": "${name}-${version}-${os}_${arch}.${ext}",
     "compression": "store",
     "win": {
-      "icon": "./res/icon.ico"
+      "icon": "./res/icon.ico",
+      "target": [
+        "portable"
+      ]
     },
     "linux": {
       "icon": "./res/icon.png"
