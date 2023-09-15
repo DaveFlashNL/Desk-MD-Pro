@@ -78,13 +78,13 @@ And, provided you had previously correctly setup macOS/Xcode codesigning, the ap
 
 De-quarantining on macOS, in terminal, 
 
-- `xattr -d com.apple.quarantine "/path/to/your.app"`
+- `xattr -d com.apple.quarantine "/Applications/electronwmd.app"`
 
 #### Step 6
 
 Codesign local binary with self-signing certificate:
 
-- `codesign --sign - --force --deep "/path/to/your.app"`
+- `codesign --sign --force --deep "/Applications/electronwmd.app"`
 
 This shouldd be all that is needed, enjoy the application.
 ___
